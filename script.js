@@ -105,5 +105,5 @@ window.enviarWhatsApp = () => {
     let msg = "🚲 *FREEWHEEL BIKE SHOP - PEDIDO*\n\n";
     carrito.forEach(p => msg += `- ${p.nombre} ($${p.precio})\n`);
     msg += `\n*TOTAL: $${carrito.reduce((s,p)=>s+p.precio,0)}*`;
-    window.open(`https://wa.me/52001228?text=${encodeURIComponent(msg)}`);
+    window.open(`https://wa.me/5352001228?text=${encodeURIComponent(msg)}`);
 };
