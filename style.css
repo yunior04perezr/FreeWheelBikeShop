@@ -1,0 +1,24 @@
+:root { --main: #e67e22; --dark: #1a1a1a; --success: #25d366; }
+body { font-family: 'Segoe UI', sans-serif; background: #f9f9f9; margin: 0; padding-bottom: 80px; }
+header { background: var(--dark); color: white; text-align: center; padding: 30px 10px; }
+.buscador-container { margin-top: 15px; }
+#buscador { padding: 10px; width: 80%; max-width: 400px; border-radius: 20px; border: none; }
+
+.grid-productos { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+.card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; transition: 0.3s; }
+.card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+.precio { font-size: 1.5rem; color: #2ecc71; font-weight: bold; margin: 10px 0; }
+.agotado { opacity: 0.5; filter: grayscale(1); }
+.tag-agotado { color: #e74c3c; font-weight: bold; display: block; margin-bottom: 10px; }
+
+button { cursor: pointer; border: none; padding: 10px 15px; border-radius: 5px; color: white; transition: 0.3s; }
+button:hover { opacity: 0.8; }
+.card button { background: var(--main); width: 100%; font-size: 1rem; }
+
+#admin-panel { background: #eee; padding: 20px; margin: 20px; border-radius: 10px; }
+.hidden { display: none !important; }
+.form-group input { padding: 8px; margin: 5px; border: 1px solid #ccc; border-radius: 4px; }
+
+#carrito-flotante { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 400px; }
+#btn-comprar { background: var(--success); width: 100%; font-weight: bold; padding: 15px; border-radius: 30px; font-size: 1.1rem; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+#login-admin { text-align: center; padding: 20px; }

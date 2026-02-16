@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeWheel Bike Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚲 FreeWheel Bike Shop</h1>
+        <p>Tu pasión, nuestra ruta.</p>
+        <div class="buscador-container">
+            <input type="text" id="buscador" placeholder="Buscar bicicleta o accesorio..." onkeyup="filtrarProductos()">
+        </div>
+    </header>
+
+    <main id="app">
+        <section id="lista-productos" class="grid-productos"></section>
+    </main>
+
+    <section id="login-admin">
+        <button onclick="solicitarAcceso()">🔒 Administrar Tienda</button>
+    </section>
+
+    <section id="admin-panel" class="hidden">
+        <h2>🛠 Panel de Control</h2>
+        <div class="form-group">
+            <input type="text" id="admin-nombre" placeholder="Nombre del producto">
+            <input type="number" id="admin-precio" placeholder="Precio ($)">
+            <input type="text" id="admin-foto" placeholder="Link de la imagen">
+            <button onclick="crearProducto()" style="background: #27ae60;">+ Agregar</button>
+        </div>
+        <div id="gestion-stock"></div>
+        <button onclick="cerrarSesion()" class="btn-cerrar">Cerrar Panel</button>
+    </section>
+
+    <div id="carrito-flotante">
+        <button onclick="enviarWhatsApp()" id="btn-comprar">🛒 Enviar Pedido ($0)</button>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
